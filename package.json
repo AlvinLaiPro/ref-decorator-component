@@ -1,0 +1,50 @@
+{
+  "name": "ref-decorator-component",
+  "version": "0.1.0",
+  "description": "to solve React component reference lost in decorator mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlvinLaiPro/ref-decorator-component.git"
+  },
+  "keywords": [
+    "react",
+    "refs",
+    "decorator"
+  ],
+  "author": "alvin lai <alvinlaipro@gmail.com> (https://github.com/AlvinLaiPro)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlvinLaiPro/ref-decorator-component/issues"
+  },
+  "homepage": "https://github.com/AlvinLaiPro/ref-decorator-component#readme",
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai-enzyme": "^0.8.0",
+    "enzyme": "^2.9.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "react-addons-test-utils": "^15.6.0",
+    "sinon": "^2.3.6"
+  },
+  "dependencies": {
+    "chai": "^4.0.2",
+    "react": "^15.6.1",
+    "react-css-modules": "^4.4.0",
+    "react-dom": "^15.6.1",
+    "react-intl": "^2.3.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  }
+}
