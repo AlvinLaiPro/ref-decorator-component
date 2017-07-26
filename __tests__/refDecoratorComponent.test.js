@@ -3,8 +3,7 @@ import chai, { expect } from 'chai'
 import chaiEnzyme from 'chai-enzyme'
 import { mount } from 'enzyme'
 import { injectIntl } from 'react-intl'
-import {
-  refDecoratorComponent,
+import refDecoratorComponent, {
   refComponentHoc
 } from '../src/refDecoratorComponent'
 import { mountWithIntl } from '../helpers/intl-enzyme-test-helper.js'

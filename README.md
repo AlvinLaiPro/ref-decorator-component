@@ -1,5 +1,6 @@
 # ref-decorator-component
 to solve React component reference lost in decorator mode
+
 解决react component被装饰器装饰时ref属性丢失
 ## Usage
 
@@ -12,7 +13,7 @@ Then, require the package and use it like so:
  
 ```js
 // yourComponent.js( YourComponent to be refered )
-
+// 想要ref引用到被装饰器装饰的组件
 import {injectIntl} from 'react-intl'
 import {connect} from 'react-redux'
 import react from 'react'
@@ -21,12 +22,13 @@ import refDecoratorComponent from 'ref-decorator-component'
 class YourComponent extends React.Component{
   //here is your code
   test(){
+    // test the YourComponent decorated by connect and injectlntl can be obtained by _getRef method
+    // 测试被injectIntl、connect装饰的YourComponent是否能通过_getRef方法得到
     return 'test'
   }
   render(){
   }
 }
-
 export default refDecoratorComponent([injectIntl, connect(
   state=>state.YourComponentState
   )], YourComponent)

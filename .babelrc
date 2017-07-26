@@ -1,17 +1,42 @@
 {
-  "presets": [
-    "react",
-    "stage-2",
-    [
-      "es2015",
-      {
-        "modules": false
-      }
-    ]
-  ],
-  "plugins": ["external-helpers"],
   "env": {
+    "development": {
+      "presets": [
+        "react",
+        "stage-2",
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ]
+      ],
+      "plugins": ["external-helpers"]
+    },
+    "production": {
+      "presets": [
+        "react",
+        "stage-2",
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ]
+      ],
+      "plugins": ["external-helpers"]
+    },
     "test": {
+      "presets": [
+        "react",
+        "stage-2",
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ]
+      ],
       "plugins": ["transform-es2015-modules-commonjs"]
     }
   }
